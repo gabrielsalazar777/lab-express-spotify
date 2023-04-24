@@ -1,2 +1,17 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<html>
+  <head>
+    <title>Artist Search</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    {{!-- {{{body}}} --}}
+    <!-- Simple form which will send a GET request -->
+    <form action="/artist-search" method="GET">
+      <label for="artistName">Artist Name</label>
+      <input id="artist-name-input" type="text" name="artistName" />
+
+      <button type="submit">Search for an Artist</button>
+    </form>
+
+  </body>
+</html>
